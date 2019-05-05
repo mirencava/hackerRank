@@ -5,10 +5,15 @@ $d = 4.0;
 $s = "HackerRank ";
 
 // Declare second integer, double, and String variables.
-$numero1 = 12;
-$numero2 = 4.0;
-$nombre = "is the best place to learn and practice coding!";
+$numero1;
+$numero2;
+$nombre;
 
+// Read and save an integer, double, and String to your variables.
+fscanf($handle, "%d\n", $numero1); // lee un número de STDIN
+fscanf($handle, "%d\n", $numero2); // lee un número de STDIN
+fscanf($handle, "%s\n", $nombre); // lee un número de STDIN
+// Print the sum of both integer variables on a new line.
 // Print the sum of both integer variables on a new line.
 print ($numero1 + $i . "\n");
 
