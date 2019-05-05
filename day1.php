@@ -11,12 +11,10 @@ $nombre;
 
 // Read and save an integer, double, and String to your variables.
 fscanf($handle, "%d\n", $numero1); // lee un número de STDIN
-fscanf($handle, "%d\n", $numero2); // lee un número de STDIN
-fscanf($handle, "%s\n", $nombre); // lee un número de STDIN
-// Print the sum of both integer variables on a new line.
+fscanf($handle, "%f\n", $numero2); // lee un número de STDIN
+$nombre = fgets($handle); // lee un número de STDIN
 // Print the sum of both integer variables on a new line.
 print ($numero1 + $i . "\n");
-
 
 // Print the sum of the double variables on a new line.
 $suma =$numero2 + $d;
