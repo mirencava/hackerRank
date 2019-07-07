@@ -29,3 +29,34 @@ if __name__ == '__main__':
         contador.append(count)
 
     print(max(contador))
+
+
+# def binary(n):
+#     bin=[]
+#     while n>1:
+#         bin.append(n%2)
+#         n=n//2
+#         if n==0 or n==1:
+#             bin.append(n)
+#     return bin
+
+
+# #!/bin/python3
+#
+# import sys
+#
+#
+# n = int(input().strip())
+#
+# i, t, M = 1, 0, 0
+# while i <= n:
+#     if n & i != 0:
+#         t += 1
+#         M = max(M, t)
+#     else:
+#         t = 0
+#     i <<= 1
+#     print(i)
+#
+# print(M)
+#
