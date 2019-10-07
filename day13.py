@@ -49,15 +49,7 @@ class Student(Person):
         elif(media<40 ):
             return 'T'  
         
-    
-       
    
-        
-
-
-
-
-
 line = input().split()
 firstName = line[0]
 lastName = line[1]
