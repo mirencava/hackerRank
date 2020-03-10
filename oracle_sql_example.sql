@@ -7,3 +7,5 @@ select min(city), len
        )
  where len in(minlen,maxlen)
  group by len;
+
+                   /*el min del select es porque hay que quedarse con la primera de las apareciones de aquellas agrupaciones que tengan la misma longitud*/
