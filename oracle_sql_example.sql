@@ -15,4 +15,7 @@ select min(city), len
 FROM   emp;*/
 select  distinct city from station where REGEXP_LIKE(city,'^[aeiou]','i');
 select  distinct city from station where REGEXP_LIKE(city,'[aeiou]$','i');     
-select  distinct city from station where REGEXP_LIKE(city,'^[aeiou]','i') and REGEXP_LIKE(city,'[aeiou]$','i');                   
+select  distinct city from station where REGEXP_LIKE(city,'^[aeiou]','i') and REGEXP_LIKE(city,'[aeiou]$','i');       
+select distinct city from station where not(REGEXP_LIKE(city,'^[aeiou]','i')); 
+select distinct city from station where not(REGEXP_LIKE(city,'[aeiou]$','i'));                                                          
+                                                        
