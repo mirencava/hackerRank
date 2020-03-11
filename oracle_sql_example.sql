@@ -13,3 +13,6 @@ select min(city), len
                    SELECT empno, deptno, sal, 
        FIRST_VALUE(sal IGNORE NULLS) OVER (PARTITION BY deptno ORDER BY sal ASC NULLS LAST) AS first_val_in_dept
 FROM   emp;*/
+select  distinct city from station where REGEXP_LIKE(city,'^[aeiou]','i');
+select  distinct city from station where REGEXP_LIKE(city,'[aeiou]$','i');     
+select  distinct city from station where REGEXP_LIKE(city,'^[aeiou]','i') and REGEXP_LIKE(city,'[aeiou]$','i');                   
