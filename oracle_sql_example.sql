@@ -17,5 +17,7 @@ select  distinct city from station where REGEXP_LIKE(city,'^[aeiou]','i');
 select  distinct city from station where REGEXP_LIKE(city,'[aeiou]$','i');     
 select  distinct city from station where REGEXP_LIKE(city,'^[aeiou]','i') and REGEXP_LIKE(city,'[aeiou]$','i');       
 select distinct city from station where not(REGEXP_LIKE(city,'^[aeiou]','i')); 
-select distinct city from station where not(REGEXP_LIKE(city,'[aeiou]$','i'));                                                          
+select distinct city from station where not(REGEXP_LIKE(city,'[aeiou]$','i'));      
+select distinct city from station where not(REGEXP_LIKE(city,'^[aeiou]','i')) or  not(REGEXP_LIKE(city,'[aeiou]$','i'));   
+select Name from STUDENTS where marks > 75 order by SUBSTR(Name, length(Name)-2,length(Name)),id;                                                                                                  
                                                         
