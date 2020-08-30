@@ -60,3 +60,43 @@ C = list(combinations(L, K))
 F = filter(lambda c: 'a' in c, C)
 
 print("{0:.3}".format(len(list(F))/len(C)))
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import itertools
+
+def cuadrado (*args):
+    resultado = 0
+    data = args[0]
+
+    for i in range(len(data)):
+        resultado = resultado + int(data[i])**2
+
+    return resultado
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import itertools
+
+def cuadrado (*args):
+    resultado = 0
+    data = args[0]
+
+    for i in range(len(data)):
+        resultado = resultado + int(data[i])**2
+
+    return resultado
+
+if __name__ == '__main__':
+    K , M = map(int,input().split())
+    valores = []
+    for _ in range(K):
+        valores.append(input().split())
+        valores[_].remove(valores[_][0])
+
+
+    data = list(itertools.product(*valores))
+
+
+
+    resultados = [cuadrado(item)%M for item in data]
+
+    print(max(resultados))
